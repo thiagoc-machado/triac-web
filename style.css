@@ -6,11 +6,14 @@
   box-sizing: border-box;
   font-family: 'Montserrat';
 }
+:root{
+  --pri-color: #4185c5;
+}
 html {
   scroll-behavior: smooth;
 }
 
-/* SECCION INICIO */
+/* INICIO */
 
 #inicio {
   background: linear-gradient(rgba(0,0,0, .7),rgba(0,0,0, .7)),url("img/back.jpg");
@@ -19,11 +22,16 @@ html {
   height: 100vh;
 }
 #inicio .contenido header {
-  background-color: rgba(0,0,0, .8);
+  background-color: rgba(0, 4, 65, 0.8);
   position: fixed;
   width: 100%;
   z-index: 100;
   top: 0;
+}
+#inicio .contenido .contenido-header .logo{
+  margin-right: 10px;
+  transition: .5s;
+  height: 5vh;
 }
 #inicio .contenido header .contenido-header {
   max-width: 1100px;
@@ -35,7 +43,7 @@ html {
 }
 #inicio .contenido header .contenido-header h1 {
   text-align: center;
-  color: #ff5080;
+  color: var(--pri-color);
 }
 #inicio .contenido header .contenido-header nav ul {
   list-style: nome;
@@ -50,7 +58,7 @@ html {
   transition: .5s;
 }
 #inicio .contenido header .contenido-header nav ul a:hover{
-  color: #ff5080;
+  color: var(--pri-color);
 }
 #inicio .contenido header .contenido-header .redes a {
   text-decoration: none;
@@ -60,10 +68,10 @@ html {
   transition: .5s;
 }
 #inicio .contenido header .contenido-header .redes a:hover {
-  color: #ff5080;
+  color: var(--pri-color);
 }
 #inicio .contenido header .contenido-header .seleccionado {
-  color: #ff5080;
+  color: var(--pri-color);
 }
 #inicio .contenido .presentacion {
   max-width: 1100px;
@@ -88,7 +96,7 @@ html {
 }
 #inicio .contenido .presentacion h2 span {
   font-size: 25px;
-  color: #ff5080;
+  color: var(--pri-color);
 }
 #inicio .contenido .presentacion .descripcion {
   max-width: 700px;
@@ -109,7 +117,7 @@ html {
   transition: .5s;
 }
 #inicio .contenido .presentacion a:hover {
-  background-color: #ff5080;
+  background-color: var(--pri-color);
 }
 #icono-nav{
   color: #fff;
@@ -131,7 +139,7 @@ html {
   padding: 20px;
   width: 100%;
   border-radius: 20px;
-  background-color: #f3f3f3;
+  background-color: #3e7088;
 }
 #sobremi .sobremi {
   margin: 0 40px;
@@ -147,9 +155,6 @@ html {
   font-weight: bold;
   margin: 20px 0;
   letter-spacing: 2px;
-}
-#sobremi .sobremi h2 span {
-  color: #ff5080;
 }
 #sobremi .sobremi h3 {
   font-size: 18px;
@@ -175,21 +180,25 @@ html {
   transition: .5s; 
 }
 #sobremi .sobremi a:hover {
-  background-color:#ff5080;
+  background-color:var(--pri-color);
   color: #fff;
 }
 
 /* SECCION SERVICIOS */
 
 #servicios{
+  background: linear-gradient(#2b49f756, rgb(8, 10, 33)),url("img/back2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   padding: 100px 15px;
   text-align: center;
-  background-color: #f3f3f3;
 }
 #servicios .titulo-seccion {
   font-size: 22px;
   text-transform: uppercase;
-  color: #111135;
+  color: #ffffff;
   text-decoration: underline;
   text-decoration-color: #d3d3d3;
   text-decoration-thickness: 5px;
@@ -219,6 +228,7 @@ html {
 display: inline-block;
 width: 60px;
 height: 60px;
+color: #000;
 border-radius: 50%;
 background-color: #d3d3d3;
 padding: 20px;
@@ -241,105 +251,77 @@ margin-bottom: 25px;
   line-height: 22px;
 }
 
-/* SESSION HABILIDADES */
+/* SESSION ENDEREÇO */
 
-.contenedor-skills {
-  background: linear-gradient(#eb5a5acc, rgba(33,16,8)),url("img/fondo-skills.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding: 100px 0;
-  text-align: center;
+#endereco{
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 15px;
+  color: #111135;
+  display: flex;
 }
-.contenedor-skills .skill {
-  max-width: 600px;
-  margin: 30px auto;
+#endereco .contenedor-foto {
+  max-width: 400px;
+  margin-right: 80px;
 }
-.contenedor-skills .skill .info{
-  display:flex;
-  justify-content: space-between;
+#endereco .contenedor-foto iframe {
+  padding: 20px;
+  width: 200%;
+  border-radius: 20px;
+  background-color: #3e7088;
 }
-.contenedor-skills .skill .lista {
+#endereco .end {
+  margin: 0 50px;
+  margin-left: 250px;
+}
+#endereco .end .titulo-seccion {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+#endereco .end h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+#endereco .end h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+#endereco .end p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #565656;
+  margin-bottom: 12px;
+}
+#endereco .end a {
   display: inline-block;
-  margin-right: 20px;
-  height: 10px;
-  width: 10px;
-  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  border-radius: 30px;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  margin-top: 30px;
+  transition: .5s; 
 }
-.contenedor-skills .skill .barra {
-  background-color: #919191;
-  width: 100%;
-  height: 6px;
-  margin: 10px 0;
-}
-.contenedor-skills .skill .barra .barra-progreso1 {
-  background-color: #fff;
-  width: 95%;
-  height: 6px;
-  animation: progreso1 2s forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso2 {
-  background-color: #fff;
-  width: 90%;
-  height: 6px;
-  animation: progreso2 2s forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso3 {
-  background-color: #fff;
-  width: 95%;
-  height: 6px;
-  animation: progreso3 2s forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso4 {
-  background-color: #fff;
-  width: 75%;
-  height: 6px;
-  animation: progreso4 2s forwards;
-}
-/* animacion de las barras */
-
-@keyframes progresso1 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 95%;
-  }
-}
-@keyframes progresso2 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
-  }
-}
-@keyframes progresso3 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 95%;
-  }
-}
-@keyframes progresso4 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 95%;
-  }
+#endereco .end a:hover {
+  background-color:var(--pri-color);
+  color: #fff;
 }
 
-/* PORTIFOLIO */
+/* SERVIÇOS */
 
-#portfolio {
+#servicos {
   max-width: 1100px;
   padding: 100px 0;
   margin: auto;
 }
-#portfolio .titulo-seccion {
+#servicos .titulo-seccion {
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
@@ -348,19 +330,19 @@ margin-bottom: 25px;
   text-decoration-color: #d3d3d3;
   text-decoration-thickness: 5px;
 }
-#portfolio .fila {
+#servicos .fila {
   display: flex;
   justify-content: space-between;
   margin: 30px 0;
 }
-#portfolio .fila .proyecto {
+#servicos .fila .serv {
   max-width: 450px;
   border: 1px solid #000;
   margin: 0 10px;
   position: relative;
   overflow: hidden;
 }
-#portfolio .fila .proyecto img {
+#servicos .fila .serv img {
   width: 100%;
   height: 100%;
   ;
@@ -368,21 +350,21 @@ margin-bottom: 25px;
   object-fit: cover;
   transition: .5s;
 }
-#portfolio .fila .proyecto:hover img {
+#servicos .fila .serv:hover img {
   filter: grayscale(0);
 }
-#portfolio .fila .proyecto .info {
+#servicos .fila .serv .info {
   position: absolute;
   left: 0px;
   background-color: rgba(0, 0, 0, 0.8);
-  color: #ff5080;
+  color: var(--pri-color);
   width: 100%;
   padding: 10px;
   opacity: 0;
   bottom: -40px;
   transition: .5s;
 }
-#portfolio .fila .proyecto:hover .info {
+#servicos .fila .serv:hover .info {
   opacity: 1;
   bottom: 0;
 }
@@ -447,7 +429,7 @@ margin-bottom: 25px;
 }
 
 #contacto .btn-enviar:hover {
-  background-color: #ff5080;
+  background-color: var(--pri-color);
   color: #fff;
 }
 footer {
@@ -496,7 +478,7 @@ footer a {
   #inicio .contenido .presentacion h2 {
       font-size: 40px;
   }
-  /* seccion SOBRE MI */
+  /* seccion SOBRE */
   #sobremi {
       padding: 50px 0;
       display: block;
@@ -515,7 +497,7 @@ footer a {
       font-size: 25px;
       text-align: center;
   }
-  /* seccion MIS SERVICIOS */
+  /* seccion SERVICOS */
   #servicios {
       padding: 50px 15px;
   }
@@ -525,10 +507,32 @@ footer a {
   #servicios .fila .servicio {
       margin: 10px auto;
   }
-  /* seccion HABLIDADES MI */
-  .contenedor-skills {
-      padding: 50px 20px;
-  }
+  /* seccion ENDEREÇO */
+  #endereco {
+    padding: 50px 0;
+    display: block;
+}
+#endereco .contenedor-foto {
+    max-width: 200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+}
+#endereco .contenedor-foto iframe {
+    padding: 8px;
+}
+#endereco .end{
+  margin: 0;
+  text-align: center; 
+}
+#endereco .end .titulo-seccion {
+  text-align: center;
+}
+#endereco .end h2 {
+  font-size: 25px;
+  text-align: center;
+}
   /* seccion PORTFOLIO */
   #portfolio {
       padding: 50px 0;
