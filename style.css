@@ -46,7 +46,7 @@ html {
   color: var(--pri-color);
 }
 #inicio .contenido header .contenido-header nav ul {
-  list-style: nome;
+  list-style: none;
   display: flex;
   align-items: center;
 }
