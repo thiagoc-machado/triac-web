@@ -16,13 +16,14 @@ function seleccionar(link) {
 
 //menu responsivo
 function responsiveMenu() {
-    var x = document.getElementById("nav");
+    var x = document.getElementById("nav","redes");
     if (x.className === "") {
         x.className = "responsive";
     } else {
         x.className = "";
     }
 }
+
 
 //contato
 const btn = document.getElementById('button');

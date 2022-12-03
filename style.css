@@ -226,14 +226,15 @@ html {
   margin-bottom: 25px;
 }
 #servicios .fila .servicio .icono {
-display: inline-block;
-width: 60px;
-height: 60px;
-color: #000;
-border-radius: 50%;
-background-color: #d3d3d3;
-padding: 20px;
-margin-bottom: 25px;
+  font-size: 5vh;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  color: #000;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  padding: 10px;
+  margin-bottom: 25px;
 }
 #servicios .fila .servicio hr {
   width: 30%;
@@ -452,16 +453,20 @@ footer a {
 
 @media screen and (max-width: 800px) {
   .redes {
-      display: none;
+    display: flex;
+    justify-content:center;
+    color: #919191;
+    /* display: none; */
   }
   nav {
+    justify-content:center;
       display: none;
   }
   nav.responsive {
       display: block;
       background-color: rgba(0, 0, 0, .8);
       width: 100%;
-      position: absolute;
+      position:absolute;
       top: 48px;
       left: 0;
       padding: 10px 0;
@@ -474,7 +479,14 @@ footer a {
       margin: 5px 0;
   }
   #icono-nav {
+    color: #919191;
       display: block;
+      font-size: 4vh;
+  }
+  #inicio .contenido .contenido-header .logo{
+    margin-right: 10px;
+    transition: .5s;
+    height: 4vh;
   }
   #inicio .contenido .presentacion h2 {
       font-size: 40px;
