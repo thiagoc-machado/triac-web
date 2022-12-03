@@ -61,6 +61,7 @@ html {
   color: var(--pri-color);
 }
 #inicio .contenido header .contenido-header .redes a {
+  font-size: 3vh;
   text-decoration: none;
   color: #fff;
   display: inline-block;

@@ -1,4 +1,4 @@
-//Función que me aplica el estilo a la opciòn seleccionada y quita la previamente seleccionada
+//menu
 function seleccionar(link) {
     var opciones = document.querySelectorAll('#links  a');
     opciones[0].className = "";
@@ -8,13 +8,13 @@ function seleccionar(link) {
     opciones[4].className = "";
     link.className = "seleccionado";
 
-    //Hacemos desaparecer el menu una vez que se ha seleccionado una opcion
+    //retirar menu
     //en modo responsive
     var x = document.getElementById("nav");
     x.className = "";
 }
 
-//función que muestra el menu responsive
+//menu responsivo
 function responsiveMenu() {
     var x = document.getElementById("nav");
     if (x.className === "") {
@@ -24,3 +24,43 @@ function responsiveMenu() {
     }
 }
 
+//contato
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+    
+    .addEventListener('submit', function(event) {
+        event.preventDefault();
+    btn.value = 'Enviando...';
+    const serviceID = 'default_service';
+    const templateID = 'template_cs6uocn';
+    emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+        btn.value = 'Enviar Mensagem';
+        alert('Mensagem enviada com sucesso');
+    }, (err) => {
+        btn.value = 'Enviar Mensagem';
+        alert(JSON.stringify(err));
+    });
+});
+
+// Mascara de tel
+function mascara(i,t){
+    var v = i.value;
+    
+    if(t === "tel"){
+        if (v.length === 1) i.value = "(" + i.value;
+        if (v.length === 3) i.value += ") ";
+        if(v[5] == 9){
+            i.setAttribute("maxlength", "15");
+            if (v.length === 10) i.value += "-";
+        }else{
+            i.setAttribute("maxlength", "14");
+            if (v.length === 9) i.value += "-";
+        }
+        if(isNaN(v[v.length-1])){
+            i.value = v.substring(0, v.length-1);
+            return;
+        }
+    }
+}
