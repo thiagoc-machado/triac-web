@@ -151,6 +151,9 @@ html {
   color: #d3d3d3;
   text-decoration-thickness: 5px;
 }
+#sobremi .sobremi h1{
+  font-size: 3vh;
+}
 #sobremi .sobremi h2 {
   font-size: 34px;
   font-weight: bold;
@@ -495,6 +498,9 @@ footer a {
   #sobremi {
       padding: 50px 0;
       display: block;
+  }
+  #sobremi .sobremi h1{
+    font-size: 1.5vh;
   }
   #sobremi .contenedor-foto {
       max-width: 200px;
