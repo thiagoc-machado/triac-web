@@ -1,5 +1,23 @@
-Triac Soluções em eletrônica
+Triac Soluções
+==============
 
-The home appliance maintenance company's website was developed with a combination of HTML, CSS, and JavaScript to ensure an optimized and attractive user experience.
-The website's structure was carefully designed to be intuitive and easy to navigate, with a responsive menu that perfectly adapts to any screen size. In addition, we included a field for sending messages so that you can contact us quickly and easily, as well as photos with descriptions and animations to make your experience more pleasant and interactive.
-We use the most updated technologies to ensure that the website has an optimized and fast performance, and we are always looking for ways to further improve the user's navigation experience.
+The Triac Soluções website is an appliance maintenance company website developed using only HTML, CSS, and JavaScript. The website has been optimized to provide an attractive and seamless user experience. The website structure is intuitive and easy to navigate, with a responsive menu that adapts to any screen size.
+
+Installation
+------------
+
+No installation needed, just open the link <https://triac.info/>
+
+Features
+--------
+
+-   Responsive menu that adapts to any screen size
+-   Contact form for easy communication with the company
+-   Interactive photo galleries with descriptions
+-   Optimized and fast performance
+
+
+Author
+------
+
+-   Thiago Machado (<https://github.com/thiagoc-machado>)
